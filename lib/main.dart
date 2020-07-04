@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'detail.dart';
 
 void main() {
   runApp(MyApp());
@@ -51,8 +52,16 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  Container(
-                    child: Image.asset('images/img-1.jpg'),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Detail()),
+                      );
+                    },
+                    child: Container(
+                      child: Image.asset('images/img-1.jpg'),
+                    ),
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 10),
@@ -68,19 +77,27 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 10),
-                    child: Image.asset('images/img-1.jpg'),
+                    child: Image.asset('images/img-5.jpeg'),
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 10),
-                    child: Image.asset('images/img-2.jpg'),
+                    child: Image.asset('images/img-6.jpg'),
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 10),
-                    child: Image.asset('images/img-3.jpg'),
+                    child: Image.asset('images/img-7.jpeg'),
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 10),
-                    child: Image.asset('images/img-4.jpg'),
+                    child: Image.asset('images/img-8.jpg'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 10),
+                    child: Image.asset('images/img-9.jpg'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 10),
+                    child: Image.asset('images/img-10.jpg'),
                   ),
                 ],
               ),
@@ -91,23 +108,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 Spacer(),
                 Text("All Books", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),),
               ],
-            ),
-            Card(
-              child: Row(
-                children: <Widget>[
-                  Image.asset('images/img-1.jpg', height: 150,),
-                  Container(
-                    margin: EdgeInsets.only(left: 10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text("The Magic Forest", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),),
-                        Text("Author by : Leang", style: TextStyle(fontSize: 15,),),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
             ),
             Card(
               child: Row(
@@ -163,7 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Card(
               child: Row(
                 children: <Widget>[
-                  Image.asset('images/img-1.jpg', height: 150,),
+                  Image.asset('images/img-5.jpeg', height: 150,),
                   Container(
                     margin: EdgeInsets.only(left: 10),
                     child: Column(
@@ -180,41 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Card(
               child: Row(
                 children: <Widget>[
-                  Image.asset('images/img-1.jpg', height: 150,),
-                  Container(
-                    margin: EdgeInsets.only(left: 10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text("The Magic Forest", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),),
-                        Text("Author by : Leang", style: TextStyle(fontSize: 15,),),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Card(
-              child: Row(
-                children: <Widget>[
-                  Image.asset('images/img-1.jpg', height: 150,),
-                  Container(
-                    margin: EdgeInsets.only(left: 10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text("The Magic Forest", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),),
-                        Text("Author by : Leang", style: TextStyle(fontSize: 15,),),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Card(
-              child: Row(
-                children: <Widget>[
-                  Image.asset('images/img-1.jpg', height: 150,),
+                  Image.asset('images/img-6.jpg', height: 150,),
                   Container(
                     margin: EdgeInsets.only(left: 10),
                     child: Column(
